@@ -1,0 +1,59 @@
+strcmp() diferencia maiúsculas de minúsculas;
+• int stricmp(cadeia1,cadeia2);
+• Compara duas cadeias de caracteres considerando
+maiúsculas e minúsculas iguais, retorna um número
+inteiro com mesmo significado de strcmp().
+• int strncmp(cadeia1,cadeia2, n);
+• Compara duas cadeias da primeira posição até n ou até
+encontrar alguma diferença, retorna um número inteiro
+com mesmo significado que para strcmp().
+
+
+int strcmp(cadeia1,cadeia2);
+• Compara duas cadeias de caracteres e retorna um número
+inteiro, que poderá ser:
+• zero: as duas cadeias são iguais;
+• negativo: a cadeia1 é alfabeticamente menor que a
+cadeia2;
+• positivo: a cadeia1 é alfabeticamente maior que a
+cadeia2;
+• Considera maiúsculas e minúsculas diferentes.
+
+char str1[10],str2[10];
+• // concatena o conteúdo de str2 em str1
+strcat(str1, str2);
+• // concatena os n primeiros caracteres de str2 em str1
+strncat(str1, str2, n);
+
+char str1[10],str2[10];
+• // copia o conteúdo de str2 para str1
+strcpy(str1, str2);
+• // copia os n primeiros caracteres de str2 para str1
+strncpy(str1, str2, n);
+Cópia
+
+int strlen(cadeia);
+• Número de caracteres de uma cadeia;
+
+strset(cadeia, caractere);
+• Substitui todos os caracteres da cadeia para um dado
+caractere;
+•
+ strnset(cadeia, caractere, n);
+• Substitui os n primeiros caracteres da cadeia para o
+caractere;
+• strrev(cadeia);
+• Inverte todos os caracteres da cadeia.
+
+char toupper(caractere);
+• Retorna o correspondente caractere maiúsculo;
+• char tolower(caractere);
+• Retorna o correspondente caractere minúsculo;
+• São funções da biblioteca <ctype.h>
+strupr(cadeia);
+• Converte todos os caracteres da cadeia para
+maiúsculo;
+• strlwr(cadeia);
+• Converte todos os caracteres da cadeia para
+minúsculo;
+• São funções da biblioteca <string.h>

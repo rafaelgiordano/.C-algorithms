@@ -1,0 +1,16 @@
+#include <stdio.h>
+float calculo(float salario);
+int main(){
+float sal, novo_sal, aum;
+printf(“Informe o percentual”);
+scanf("%f",&sal);
+aum = calculo(sal);
+novo_sal = sal+aum;
+printf("Novo salario e %.2f",novo_sal);
+return 0;
+}
+float calculo(float salario){
+float perc, valor;
+printf(“Informe o salário”);
+scanf("%f",&perc);
+valor = salario*perc/100;
